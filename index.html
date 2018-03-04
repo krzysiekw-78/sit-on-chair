@@ -7,21 +7,29 @@
 </head>
 <body>
 <header>
-    <div class="top container">
-        <p>Sit <span>on</span> chair</p>
+    <div class="container clearfix">
+        <p class="topLogo">Sit <span>on</span> chair</p>
+
         <nav>
+
             <ul>
                 <li><a href="#">O firmie</a>
-                    <!--<ul>-->
-                    <!--<li>Aktualności</li>-->
-                    <!--<li>Nasz team</li>-->
-                    <!--<li>Historia</li>-->
-                    <!--</ul>-->
+                    <div class="connector">
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="subMenu">
+                        <ul>
+                            <li><a href="#">Aktualności</a></li>
+                            <li><a href="#">Nasz team</a></li>
+                            <li><a href="#">Historia</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li><a href="#">Galeria</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
+
     </div>
 </header>
 
@@ -154,16 +162,22 @@
         <div class="contactForm">
             <div class="formLeft">
                 <form>
-                    <div><input type="text" name="firstName" placeholder="Imię"></div>
-                    <div><input type="email" name="email" placeholder="email"></div>
-                    <div><textarea name="about" rows="4" placeholder="Wiadomość"></textarea>
+                    <div><input type="text" name="firstName" placeholder="Imię" id="firstName"></div>
+                    <div><input type="email" name="email" placeholder="email" id="email"></div>
+                    <div><textarea name="about" rows="4" placeholder="Wiadomość" id="message"></textarea>
                     </div>
                 </form>
             </div>
             <div class="formRight">
                 <div class="formImage"></div>
-                <div>Zgadzam się na przetwarzanie danych osobowych</div>
-                <div class="contactButton"><input type="submit" value="Wyślij"></div>
+                <div>
+                    <form>
+                        <input class="checkAgree" type="checkbox" name="agree" value="agree">
+                        Zgadzam się na przetwarzanie danych osobowych
+                    </form>
+                    <div class="contactButton">Wyślij</div>
+                </div>
+
             </div>
         </div>
     </div>
