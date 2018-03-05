@@ -108,73 +108,77 @@ header .topLogo {
 }
 
 /*właściwości menu głównego*/
-header nav {
-    float: right;
-}
 
-header nav ul {
+
+ul.menu {
     list-style-type: none;
-    color: white;
-    line-height: 40px;
-    text-transform: uppercase;
+    width: 370px;
+    padding: 0;
+    margin-left: auto;
     font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    /*border: 1px solid red;*/
+
 }
 
-header nav ul li {
+ul.menu > li {
     float: left;
-    margin-left: 45px;
-    margin-top: 0;
+    background-color: black;
+    width: 120px;
+    margin-left: 2px;
     position: relative;
 }
 
-header nav ul li a:link, header nav ul li a:visited {
+ul.menu > li > a {
+    display: block;
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
+    /*padding: 0 5px;*/
 }
+
 /*własciwosci menu rozwijanego*/
-header nav .connector, header nav .subMenu {
+
+ul.menu > li > ul.submenu {
     display: none;
-    position: absolute;
-    width: 120px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-/*connector - łącznik z podmenu*/
-
-header nav .connector {
-    height: 15px;
-    top: 40px;
-    left: -25px;
-}
-
-header nav .connector .triangle {
-    display: none;
+ul.menu > li > ul.submenu > li {
     background-color: black;
-    position: absolute;
-    top: 0px;
-    left: 45px;
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-    z-index: 4;
+    width: 120px;
+    float: none;
 }
 
-/*submenu*/
-header nav ul li:hover .subMenu, header nav ul li:hover .connector, header nav ul li:hover .connector .triangle{
+ul.menu > li > ul.submenu > li > a {
+    color: white;
+    /*border-top: 1px solid white;*/
+    text-decoration: none;
+    text-transform: uppercase;
     display: block;
 }
 
-header nav .subMenu {
-    height: 120px;
-    background-color: black;
-    color: white;
-    top: 50px;
-    left: -25px;
+ul.menu > li:hover > ul.submenu {
+    display: block;
+    position: absolute;
 }
 
-header nav .subMenu ul {
-    font-size: 12px;
-    margin-left: -30px;
+ul.menu > li:hover > ul.submenu::before {
+    display: block;
+    position: relative;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid black;
+    margin: 0 auto;
 }
+
 /*section slider*/
 
 .slider {

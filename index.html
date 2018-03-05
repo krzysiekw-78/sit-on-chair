@@ -7,25 +7,23 @@
 </head>
 <body>
 <header>
-    <div class="container clearfix">
+    <div class="container">
         <p class="topLogo">Sit <span>on</span> chair</p>
 
         <nav>
-
-            <ul>
+            <ul class="menu">
                 <li><a href="#">O firmie</a>
-                    <div class="connector">
-                        <div class="triangle"></div>
-                    </div>
-                    <div class="subMenu">
-                        <ul>
-                            <li><a href="#">Aktualności</a></li>
-                            <li><a href="#">Nasz team</a></li>
-                            <li><a href="#">Historia</a></li>
-                        </ul>
-                    </div>
+                    <ul class="submenu">
+                        <li><a href="#">Aktualności</a></li>
+                        <li><a href="#">Nasz team</a></li>
+                        <li><a href="#">Historia</a></li>
+                    </ul>
                 </li>
-                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Galeria</a>
+                    <ul class="submenu">
+                        <li><a href="#">2016/2017</a></li>
+                        <li><a href="#">2017/2018</a></li>
+                    </ul></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
@@ -172,7 +170,7 @@
                 <div class="formImage"></div>
                 <div>
                     <form>
-                        <input class="checkAgree" type="checkbox" name="agree" value="agree">
+                        <input class="checkAgree" type="checkbox" name="agree" value="agree" checked>
                         Zgadzam się na przetwarzanie danych osobowych
                     </form>
                     <div class="contactButton">Wyślij</div>
