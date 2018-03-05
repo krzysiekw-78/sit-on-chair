@@ -112,7 +112,7 @@ header .topLogo {
 
 ul.menu {
     list-style-type: none;
-    width: 370px;
+    width: 320px;
     padding: 0;
     margin-left: auto;
     font-size: 14px;
@@ -126,7 +126,7 @@ ul.menu {
 ul.menu > li {
     float: left;
     background-color: black;
-    width: 120px;
+    width: 100px;
     margin-left: 2px;
     position: relative;
 }
